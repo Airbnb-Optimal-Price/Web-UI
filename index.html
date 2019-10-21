@@ -8,33 +8,40 @@
       href="https://fonts.googleapis.com/css?family=Cinzel|Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/index.css">
     <title>AirBnB Optimal Price</title>
   </head>
   <body>
     <section class="heading">
-      <img src="/img/AirBnB Optimal PriceLogo.png" alt="Logo" />
+      <img src="/img/AirBnbLogo.JPG" alt="Logo" class="logo" />
       <nav class="topNav">
         <a href=".">Home</a>
         <a href="#about.html">Meet The Team</a>
-      </nav>
-      <button class="register">Register</button>
+        <button class="register">Register</button>
       <button class="login">Login</button>
     </section>
+      </nav>
+      
     <div class="bgImg">
+        <button class="CTA">Register Now!</button>
+        <div>
       <img src="/img/bgImage.jpg" alt="Brandenburgh Gate, Berlin, Germany" />
-      <button class="CTA">Register Now!</button>
+    </div>
     </div>
     <section class="searchBar">
-      <div>
-        <button>Location</button>
-        <button>Check-in-Checkout Date</button>
-        <button>How Many Guest</button>
+        <div>
+            Location
+        <input type="text" subject="location">
+        Check-in-Checkout Date
+        <input type="date" subject="Date">
+        How many Guest
+        <input type="number" subject="Guest Number">
+    </div>
         <button>search</button>
-      </div>
     </section>
     <section class="review">
       <div>
-        <img src="/img/reviewDummy.jpg" alt="Stock photo" />
+        <img src="/img/reviewDummy.jpg" alt="Stock photo" class="reviewPhoto" />
         <h2>Reviews in Berlin</h2>
         <h3>Listing name, User name</h3>
         <p>
@@ -45,7 +52,7 @@
       </div>
     </section>
     <section class="testimonial">
-      <div>
+      <div class="test one">
         <img src="/img/reviewDummy.jpg" alt="Stock photo" />
         <h2>User name</h2>
         <p>
@@ -54,7 +61,7 @@
           hic eius blanditiis molestiae rerum consectetur.
         </p>
       </div>
-      <div>
+      <div class="test two">
         <img src="/img/reviewDummy.jpg" alt="Stock photo" />
         <h2>User name</h2>
         <p>
@@ -63,7 +70,7 @@
           hic eius blanditiis molestiae rerum consectetur.
         </p>
       </div>
-      <div>
+      <div class="test three">
         <img src="/img/reviewDummy.jpg" alt="Stock photo" />
         <h2>User name</h2>
         <p>
@@ -76,9 +83,8 @@
     <section class="contact">
       <h2>AirBnB Optimal Price</h2>
       <address>123 abc st,</address>
-      <br />
       <address>Smalltown, Anywhere, USA, 12345</address>
-      <a href="#">support@airbnb-optimal-price.com</a> <br />
+      <a href="#">support@airbnb-optimal-price.com</a>
       <a href="#">(123)456-7890</a>
     </section>
     <footer> 
