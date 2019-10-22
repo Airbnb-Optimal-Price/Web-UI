@@ -26,10 +26,20 @@
       align-items: center;
       justify-content: center;
     }
+    .active {
+      color: #ff5a5f;
+    }
     button {
-      justify-content: center;
-      align-items: center;
       .customBtn(#ff5a5f, 15%, #fff);
+      &:hover {
+        .customBtn(#00a699, 15%, #000);
+      }
+    }
+    .register {
+      margin-right: 5%;
+      &:hover {
+        margin-right: 5%;
+      }
     }
   }
 }

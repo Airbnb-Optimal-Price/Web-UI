@@ -197,9 +197,10 @@ img {
   align-items: center;
   justify-content: center;
 }
+.heading .topNav .active {
+  color: #ff5a5f;
+}
 .heading .topNav button {
-  justify-content: center;
-  align-items: center;
   display: block;
   background-color: #ff5a5f;
   margin: 0 1px 20px;
@@ -209,6 +210,23 @@ img {
   font-size: 2rem;
   border-radius: 10px;
   color: #fff;
+}
+.heading .topNav button:hover {
+  display: block;
+  background-color: #00a699;
+  margin: 0 1px 20px;
+  cursor: pointer;
+  width: 15%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #000;
+}
+.heading .topNav .register {
+  margin-right: 5%;
+}
+.heading .topNav .register:hover {
+  margin-right: 5%;
 }
 footer {
   width: 100%;
@@ -252,6 +270,17 @@ footer p {
   border-radius: 10px;
   color: #fff;
 }
+.bgImg button:hover {
+  display: block;
+  background-color: #00a699;
+  margin: 0 1px 20px;
+  cursor: pointer;
+  width: 40%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #000;
+}
 .searchBar {
   width: 80vw;
   padding: 10% 10% 10%;
@@ -291,6 +320,18 @@ footer p {
   color: #fff;
   margin: 1.5% 2% 0;
   flex-direction: row;
+}
+.searchBar button:hover {
+  display: block;
+  background-color: #00a699;
+  margin: 0 1px 20px;
+  cursor: pointer;
+  width: 15%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #000;
+  margin: 1.5% 2% 0;
 }
 .review {
   width: 80vw;
@@ -386,13 +427,53 @@ footer p {
 .testimonial img {
   width: 40%;
 }
-.contact {
+#contact {
   width: 80vw;
   font-size: 2rem;
   margin: 2% auto 5%;
   line-height: 2;
 }
-.contact a {
+#contact a {
   text-decoration: none;
   color: #00a699;
+}
+#contact a:hover {
+  text-decoration: none;
+  color: #ff5a5f;
+}
+.team {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20% 5%;
+  border: 2px solid #000;
+  background-color: #fc642d;
+}
+.team div {
+  width: 40vw;
+  margin: 5% 0 8%;
+  border-bottom: 2px solid black;
+  background-color: #767676;
+  line-height: 1.2;
+}
+.team div h1 {
+  margin-left: 1%;
+}
+.team div h2 {
+  margin-left: 1%;
+}
+.team img {
+  width: 35%;
+  margin: 2% 1% 1%;
+}
+.team i {
+  font-size: 2.8rem;
+  cursor: pointer;
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+.team i:hover {
+  color: #ff5a5f;
 }

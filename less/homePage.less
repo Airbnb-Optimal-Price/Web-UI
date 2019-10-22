@@ -19,6 +19,9 @@
   button {
     z-index: 100;
     .customBtn(#ff5a5f, 40%, #fff);
+    &:hover {
+      .customBtn(#00a699, 40%, #000);
+    }
   }
 }
 
@@ -54,6 +57,10 @@
     .customBtn(#ff5a5f, 15%, #fff);
     margin: 1.5% 2% 0;
     flex-direction: row;
+    &:hover {
+      .customBtn(#00a699, 15%, #000);
+      margin: 1.5% 2% 0;
+    }
   }
 }
 
@@ -154,7 +161,7 @@
   }
 }
 
-.contact {
+#contact {
   width: 80vw;
   font-size: 2rem;
   margin: 2% auto 5%;
@@ -162,5 +169,46 @@
   a {
     text-decoration: none;
     color: #00a699;
+    &:hover {
+      text-decoration: none;
+      color: #ff5a5f;
+    }
+  }
+}
+
+.team {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20% 5%;
+  border: 2px solid #000;
+  background-color: #fc642d;
+  div {
+    width: 40vw;
+    margin: 5% 0 8%;
+    border-bottom: 2px solid black;
+    background-color: #767676;
+    line-height: 1.2;
+    h1 {
+      margin-left: 1%;
+    }
+    h2 {
+      margin-left: 1%;
+    }
+  }
+  img {
+    width: 35%;
+    margin: 2% 1% 1%;
+  }
+  i {
+    font-size: 2.8rem;
+    cursor: pointer;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    &:hover {
+      color: #ff5a5f;
+    }
   }
 }
