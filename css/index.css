@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Cinzel', serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Raleway', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -172,39 +172,75 @@ img {
   max-width: 100%;
   display: flex;
 }
-.heading .topNav {
-  width: 80%;
+.heading .logo {
+  width: 28%;
   display: flex;
-  text-decoration: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.heading .logo .logoPic {
+  width: 30%;
+}
+.heading .topNav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3.5%;
 }
 .heading .topNav a {
-  width: 8%;
-  font-size: 1.8rem;
-  columns: #000;
+  display: flex;
+  width: 25%;
+  font-size: 2.8rem;
+  color: #000;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 .heading .topNav button {
+  justify-content: center;
+  align-items: center;
   display: block;
   background-color: #ff5a5f;
   margin: 0 1px 20px;
   cursor: pointer;
-  width: 5%;
+  width: 15%;
   height: 45px;
   font-size: 2rem;
   border-radius: 10px;
   color: #fff;
 }
-.bgImg {
-  max-width: 60%;
-  margin: 10px auto;
-}
-.bgImg div img {
-  position: relative;
+footer {
   width: 100%;
+  display: flex;
+  background: #484848;
+  padding: 2% 0 0;
+  justify-content: center;
+}
+footer p {
+  font-size: 2rem;
+  color: #fff;
+}
+.bgImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  background-image: url(/img/bgImage.jpg);
+  background-repeat: no-repeat;
+}
+.bgImg h2 {
+  font-size: 3.6rem;
+  color: #fff;
+}
+.bgImg p {
+  font-size: 2.4rem;
+  color: #fff;
 }
 .bgImg button {
-  margin: 150px 50px;
-  position: absolute;
   z-index: 100;
   display: block;
   background-color: #ff5a5f;
@@ -217,17 +253,27 @@ img {
   color: #fff;
 }
 .searchBar {
-  width: 60%;
+  width: 80vw;
   padding: 10% 10% 10%;
   margin: 25px auto;
   display: flex;
-  border: 2px solid #000;
-  background-color: #767676;
+  border-bottom: 2px solid #000;
 }
 .searchBar div {
   display: flex;
-  width: 80%;
+  width: 90%;
+  margin: 1% 1% 1%;
+  flex-direction: column;
   font-size: 1.8rem;
+}
+.searchBar .where {
+  width: 30%;
+}
+.searchBar .when {
+  width: 20%;
+}
+.searchBar .how {
+  width: 15%;
 }
 .searchBar input {
   font-size: 2rem;
@@ -243,62 +289,110 @@ img {
   font-size: 2rem;
   border-radius: 10px;
   color: #fff;
-  margin: 0 5% 0;
+  margin: 1.5% 2% 0;
   flex-direction: row;
 }
 .review {
-  width: 60%;
+  width: 80vw;
   display: flex;
   margin: 0 auto;
 }
 .review .reviewPhoto {
-  widows: 100%;
+  width: 50%;
+}
+.review h2 {
+  font-size: 3.2rem;
+  margin: 2% 0 2%;
+}
+.review h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2%;
+}
+.review p {
+  font-size: 1.8rem;
+  width: 54%;
 }
 .testimonial {
-  width: 60%;
+  width: 80vw;
   display: flex;
   margin: 0 auto;
-  border: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   flex-wrap: wrap;
 }
 .testimonial .one {
-  align-content: flex-start;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  width: 100%;
   margin: 1% 5% 1%;
   padding: 5% 0 5%;
+}
+.testimonial .one img {
+  width: 20%;
+  border-radius: 50%;
+}
+.testimonial .one h2 {
+  width: 60%;
+  margin-top: -8%;
+  margin-left: 22%;
+}
+.testimonial .one p {
+  width: 30%;
+  margin-left: 22%;
 }
 .testimonial .two {
-  width: 100%;
-  align-content: flex-end;
-  margin: 1% 5% 1%;
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+  margin: 1% 0% 1%;
   padding: 5% 0 5%;
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
+.testimonial .two img {
+  width: 20%;
+  border-radius: 50%;
+}
+.testimonial .two h2 {
+  width: 30%;
+  margin-top: -8%;
+  margin-right: 18.25%;
+}
+.testimonial .two p {
+  width: 30%;
+  margin-right: 18%;
 }
 .testimonial .three {
-  width: 100%;
-  align-items: flex-end;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
   flex-direction: column;
   margin: 1% 5% 1%;
   padding: 5% 0 5%;
+}
+.testimonial .three img {
+  width: 20%;
+  border-radius: 50%;
+}
+.testimonial .three h2 {
+  width: 60%;
+  margin-top: -8%;
+  margin-left: 22%;
+}
+.testimonial .three p {
+  width: 30%;
+  margin-left: 22%;
 }
 .testimonial img {
   width: 40%;
 }
 .contact {
-  width: 60%;
+  width: 80vw;
   font-size: 2rem;
   margin: 2% auto 5%;
   line-height: 2;
 }
-footer {
-  width: 100%;
-  display: flex;
-  background: #484848;
-  padding: 2% 0 0;
-  justify-content: center;
-}
-footer p {
-  font-size: 2rem;
-  color: #fff;
+.contact a {
+  text-decoration: none;
+  color: #00a699;
 }

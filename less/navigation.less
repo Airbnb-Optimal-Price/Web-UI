@@ -1,18 +1,35 @@
 .heading {
   max-width: 100%;
   display: flex;
-  .topNav {
-    width: 80%;
+
+  .logo {
+    width: 28%;
     display: flex;
-    text-decoration: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .logoPic {
+      width: 30%;
+    }
+  }
+  .topNav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3.5%;
     a {
-      width: 8%;
-      font-size: 1.8rem;
-      columns: #000;
+      display: flex;
+      width: 25%;
+      font-size: 2.8rem;
+      color: #000;
       text-decoration: none;
+      align-items: center;
+      justify-content: center;
     }
     button {
-      .customBtn(#ff5a5f, 5%, #fff);
+      justify-content: center;
+      align-items: center;
+      .customBtn(#ff5a5f, 15%, #fff);
     }
   }
 }

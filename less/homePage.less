@@ -1,34 +1,50 @@
 .bgImg {
-  //   position: absolute;
-  max-width: 60%;
-  margin: 10px auto;
-  div {
-    img {
-      position: relative;
-      width: 100%;
-      // margin: 0 auto;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  background-image: url(/img/bgImage.jpg);
+  background-repeat: no-repeat;
+  h2 {
+    font-size: 3.6rem;
+    color: #fff;
+  }
+  p {
+    font-size: 2.4rem;
+    color: #fff;
   }
   button {
-    margin: 150px 50px;
-    position: absolute;
     z-index: 100;
     .customBtn(#ff5a5f, 40%, #fff);
   }
 }
 
 .searchBar {
-  width: 60%;
+  width: 80vw;
   padding: 10% 10% 10%;
   margin: 25px auto;
   display: flex;
-  border: 2px solid #000;
-  background-color: #767676;
+  // flex-direction: column;
+  border-bottom: 2px solid #000;
+  // background-color: #767676;
   div {
     display: flex;
-    width: 80%;
-    // flex-direction: column;
+    width: 90%;
+    margin: 1% 1% 1%;
+    flex-direction: column;
     font-size: 1.8rem;
+  }
+  .where {
+    width: 30%;
+  }
+  .when {
+    width: 20%;
+  }
+  .how {
+    width: 15%;
   }
   input {
     font-size: 2rem;
@@ -36,67 +52,115 @@
   }
   button {
     .customBtn(#ff5a5f, 15%, #fff);
-    margin: 0 5% 0;
+    margin: 1.5% 2% 0;
     flex-direction: row;
   }
 }
 
 .review {
-  width: 60%;
+  width: 80vw;
   display: flex;
   margin: 0 auto;
   .reviewPhoto {
-    widows: 100%;
+    width: 50%;
+  }
+  h2 {
+    font-size: 3.2rem;
+    margin: 2% 0 2%;
+  }
+  h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2%;
+  }
+  p {
+    font-size: 1.8rem;
+    width: 54%;
   }
 }
 
 .testimonial {
-  width: 60%;
+  width: 80vw;
   display: flex;
   margin: 0 auto;
-  border: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   flex-wrap: wrap;
   .one {
-    align-content: flex-start;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    width: 100%;
     margin: 1% 5% 1%;
     padding: 5% 0 5%;
+    img {
+      width: 20%;
+      border-radius: 50%;
+    }
+    h2 {
+      width: 60%;
+      margin-top: -8%;
+      margin-left: 22%;
+    }
+    p {
+      width: 30%;
+      margin-left: 22%;
+    }
   }
   .two {
-    width: 100%;
-    align-content: flex-end;
-    margin: 1% 5% 1%;
+    width: 90%;
+    display: flex;
+    align-items: flex-end;
+    margin: 1% 0% 1%;
     padding: 5% 0 5%;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    img {
+      width: 20%;
+      border-radius: 50%;
+    }
+    h2 {
+      width: 30%;
+      margin-top: -8%;
+      margin-right: 18.25%;
+    }
+    p {
+      width: 30%;
+      margin-right: 18%;
+    }
   }
   .three {
-    width: 100%;
-    align-items: flex-end;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
     flex-direction: column;
     margin: 1% 5% 1%;
     padding: 5% 0 5%;
+    img {
+      width: 20%;
+      border-radius: 50%;
+    }
+    h2 {
+      width: 60%;
+      margin-top: -8%;
+      margin-left: 22%;
+    }
+    p {
+      width: 30%;
+      margin-left: 22%;
+    }
   }
+
   img {
     width: 40%;
   }
 }
 
 .contact {
-  width: 60%;
+  width: 80vw;
   font-size: 2rem;
   margin: 2% auto 5%;
   line-height: 2;
-}
-
-footer {
-  width: 100%;
-  display: flex;
-  background: #484848;
-  padding: 2% 0 0;
-  justify-content: center;
-  p {
-    font-size: 2rem;
-    color: #fff;
+  a {
+    text-decoration: none;
+    color: #00a699;
   }
 }
