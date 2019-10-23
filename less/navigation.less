@@ -1,6 +1,9 @@
 .heading {
-  max-width: 100%;
+  width: 100%;
   display: flex;
+  @media @mobile {
+    width: 75%;
+  }
 
   .logo {
     width: 28%;
@@ -9,14 +12,24 @@
     align-items: flex-end;
     .logoPic {
       width: 30%;
+      @media @mobile {
+        display: none;
+      }
     }
   }
   .topNav {
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 3.5%;
+
+    @media @mobile {
+      width: 90%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
     a {
       display: flex;
       width: 25%;
@@ -25,6 +38,12 @@
       text-decoration: none;
       align-items: center;
       justify-content: center;
+      @media @mobile {
+        font-size: 1.8rem;
+        line-height: 2;
+        width: 58%;
+        margin: 0 auto;
+      }
     }
     .active {
       color: #ff5a5f;
@@ -34,11 +53,89 @@
       &:hover {
         .customBtn(#00a699, 15%, #000);
       }
+      @media @mobile {
+        width: 50%;
+      }
     }
     .register {
       margin-right: 5%;
       &:hover {
         margin-right: 5%;
+      }
+      @media @mobile {
+        margin: 2% auto;
+      }
+    }
+  }
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  @media @mobile {
+    width: 75%;
+  }
+
+  .logo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .logoPic {
+      width: 40%;
+      align-items: center;
+      @media @mobile {
+        display: none;
+      }
+    }
+  }
+  .topNavAbout {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    @media @mobile {
+      width: 98%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 35.5%;
+    }
+    a {
+      display: flex;
+      width: 25%;
+      font-size: 2.8rem;
+      color: #000;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      @media @mobile {
+        font-size: 1.8rem;
+        line-height: 2;
+        width: 58%;
+        margin: 0 auto;
+      }
+    }
+    .active {
+      color: #ff5a5f;
+    }
+    button {
+      .customBtn(#ff5a5f, 15%, #fff);
+      &:hover {
+        .customBtn(#00a699, 15%, #000);
+      }
+      @media @mobile {
+        width: 50%;
+      }
+    }
+    .register {
+      margin-right: 5%;
+      &:hover {
+        margin-right: 5%;
+      }
+      @media @mobile {
+        margin: 2% auto;
       }
     }
   }
