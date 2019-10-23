@@ -174,17 +174,18 @@ img {
 }
 @media (max-width: 500px) {
   .heading {
-    width: 75%;
+    width: 80%;
   }
 }
 .heading .logo {
-  width: 28%;
+  width: 25%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 .heading .logo .logoPic {
-  width: 30%;
+  width: 40%;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .heading .logo .logoPic {
@@ -199,7 +200,7 @@ img {
 }
 @media (max-width: 500px) {
   .heading .topNav {
-    width: 90%;
+    width: 98%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -219,7 +220,7 @@ img {
   .heading .topNav a {
     font-size: 1.8rem;
     line-height: 2;
-    width: 58%;
+    width: 60%;
     margin: 0 auto;
   }
 }
@@ -250,7 +251,7 @@ img {
 }
 @media (max-width: 500px) {
   .heading .topNav button {
-    width: 50%;
+    width: 30%;
   }
 }
 .heading .topNav .register {
@@ -264,31 +265,31 @@ img {
     margin: 2% auto;
   }
 }
-.heading {
+.headingAbout {
   width: 100%;
   display: flex;
 }
 @media (max-width: 500px) {
-  .heading {
+  .headingAbout {
     width: 75%;
   }
 }
-.heading .logo {
+.headingAbout .logo {
   width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-.heading .logo .logoPic {
+.headingAbout .logo .logoPic {
   width: 40%;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .heading .logo .logoPic {
+  .headingAbout .logo .logoPic {
     display: none;
   }
 }
-.heading .topNavAbout {
+.headingAbout .topNavAbout {
   width: 65%;
   display: flex;
   align-items: center;
@@ -296,7 +297,7 @@ img {
   margin-left: 10%;
 }
 @media (max-width: 500px) {
-  .heading .topNavAbout {
+  .headingAbout .topNavAbout {
     width: 98%;
     flex-direction: column;
     justify-content: center;
@@ -304,7 +305,7 @@ img {
     margin-left: 35.5%;
   }
 }
-.heading .topNavAbout a {
+.headingAbout .topNavAbout a {
   display: flex;
   width: 25%;
   font-size: 2.8rem;
@@ -314,17 +315,17 @@ img {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .heading .topNavAbout a {
+  .headingAbout .topNavAbout a {
     font-size: 1.8rem;
     line-height: 2;
     width: 58%;
     margin: 0 auto;
   }
 }
-.heading .topNavAbout .active {
+.headingAbout .topNavAbout .active {
   color: #ff5a5f;
 }
-.heading .topNavAbout button {
+.headingAbout .topNavAbout button {
   display: block;
   background-color: #ff5a5f;
   margin: 0 1px 20px;
@@ -335,7 +336,7 @@ img {
   border-radius: 10px;
   color: #fff;
 }
-.heading .topNavAbout button:hover {
+.headingAbout .topNavAbout button:hover {
   display: block;
   background-color: #00a699;
   margin: 0 1px 20px;
@@ -347,18 +348,18 @@ img {
   color: #000;
 }
 @media (max-width: 500px) {
-  .heading .topNavAbout button {
+  .headingAbout .topNavAbout button {
     width: 50%;
   }
 }
-.heading .topNavAbout .register {
+.headingAbout .topNavAbout .register {
   margin-right: 5%;
 }
-.heading .topNavAbout .register:hover {
+.headingAbout .topNavAbout .register:hover {
   margin-right: 5%;
 }
 @media (max-width: 500px) {
-  .heading .topNavAbout .register {
+  .headingAbout .topNavAbout .register {
     margin: 2% auto;
   }
 }
@@ -383,11 +384,13 @@ footer p {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 80vw;
-  height: 80vh;
+  width: 90vw;
+  height: 100vh;
   margin: 0 auto;
   background-image: url(/img/bgImage.jpg);
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
 @media (max-width: 500px) {
   .bgImg {
@@ -399,6 +402,7 @@ footer p {
 }
 .bgImg h2 {
   font-size: 3.6rem;
+  margin: 1% auto;
   color: #fff;
 }
 @media (max-width: 500px) {
@@ -407,13 +411,14 @@ footer p {
   }
 }
 .bgImg p {
+  width: 60%;
   font-size: 2.4rem;
-  color: #fff;
+  color: #faf0e6;
 }
 @media (max-width: 500px) {
   .bgImg p {
-    width: 60%;
-    font-size: 1.8rem;
+    width: 95%;
+    font-size: 1.4rem;
   }
 }
 .bgImg button {
@@ -519,19 +524,35 @@ footer p {
 .review {
   width: 80vw;
   display: flex;
-  margin: 0 auto;
+  margin: 5% auto;
+}
+.review h2 {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .review {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .review div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+  }
+}
 .review .reviewPhoto {
   width: 50%;
+  margin: 2% auto;
 }
 .review h2 {
   font-size: 3.2rem;
-  margin: 2% 0 2%;
+  margin: 1% 0 2%;
 }
 @media (max-width: 500px) {
   .review h2 {
@@ -545,15 +566,17 @@ footer p {
 @media (max-width: 500px) {
   .review h3 {
     font-size: 1.8rem;
+    margin-left: 2%;
   }
 }
 .review p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   width: 54%;
 }
 @media (max-width: 500px) {
   .review p {
     font-size: 1.4rem;
+    margin-left: 4%;
   }
 }
 .testimonial {
@@ -583,30 +606,32 @@ footer p {
 }
 @media (max-width: 500px) {
   .testimonial .one img {
-    width: 40%;
+    width: 30%;
   }
 }
 .testimonial .one h2 {
   width: 60%;
   margin-top: -8%;
   margin-left: 22%;
+  font-size: 3.6rem;
 }
 @media (max-width: 500px) {
   .testimonial .one h2 {
     font-size: 2.8rem;
     margin-top: -15%;
-    margin-left: 42%;
+    margin-left: 32%;
   }
 }
 .testimonial .one p {
-  width: 30%;
+  width: 50%;
   margin-left: 22%;
+  font-size: 2.4rem;
 }
 @media (max-width: 500px) {
   .testimonial .one p {
     font-size: 1.6rem;
     width: 75%;
-    margin-left: 42%;
+    margin-left: 32%;
   }
 }
 .testimonial .two {
@@ -623,32 +648,34 @@ footer p {
 }
 @media (max-width: 500px) {
   .testimonial .two img {
-    width: 40%;
+    width: 30%;
   }
 }
 .testimonial .two h2 {
   width: 30%;
   margin-top: -8%;
-  margin-right: 18.25%;
+  margin-right: 40%;
+  font-size: 3.6rem;
 }
 @media (max-width: 500px) {
   .testimonial .two h2 {
     font-size: 2.8rem;
     margin-top: -15%;
-    margin-right: 65%;
+    margin-right: 75%;
     justify-content: flex-end;
     align-items: flex-end;
   }
 }
 .testimonial .two p {
-  width: 30%;
-  margin-right: 18%;
+  width: 50%;
+  margin-right: 20%;
+  font-size: 2.4rem;
 }
 @media (max-width: 500px) {
   .testimonial .two p {
     font-size: 1.6rem;
     width: 75%;
-    margin-right: 20%;
+    margin-right: 30%;
   }
 }
 .testimonial .three {
@@ -665,30 +692,33 @@ footer p {
 }
 @media (max-width: 500px) {
   .testimonial .three img {
-    width: 40%;
+    width: 30%;
   }
 }
 .testimonial .three h2 {
   width: 60%;
   margin-top: -8%;
   margin-left: 22%;
+  font-size: 3.6rem;
 }
 @media (max-width: 500px) {
   .testimonial .three h2 {
     font-size: 2.8rem;
     margin-top: -15%;
-    margin-left: 42%;
+    margin-left: 32%;
   }
 }
 .testimonial .three p {
-  width: 30%;
+  width: 50%;
   margin-left: 22%;
+  font-size: 2.4rem;
 }
 @media (max-width: 500px) {
   .testimonial .three p {
+    width: 90%;
     font-size: 1.6rem;
     width: 75%;
-    margin-left: 42%;
+    margin-left: 32%;
   }
 }
 .testimonial img {
@@ -709,12 +739,10 @@ footer p {
   color: #ff5a5f;
 }
 .team {
-  width: 60vw;
+  width: 90vw;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 20% 5%;
+  flex-wrap: wrap;
+  margin: 0 5% 5%;
   border: 2px solid #000;
   background-color: #fc642d;
 }
@@ -727,38 +755,54 @@ footer p {
   }
 }
 .team div {
-  width: 40vw;
-  margin: 5% 0 8%;
-  border-bottom: 2px solid black;
-  background-color: #767676;
-  line-height: 2;
+  width: 43vw;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #000;
+  margin: 2% auto;
 }
 @media (max-width: 500px) {
   .team div {
-    width: 70vw;
+    width: 50vw;
+    display: flex;
   }
 }
-.team div h1 {
-  margin-left: 1%;
-}
-.team div h2 {
-  margin-left: 1%;
-}
-.team img {
-  width: 35%;
-  margin: 2% 1% 1%;
+.team div img {
+  width: 40%;
+  margin: 2% 1% 2%;
 }
 @media (max-width: 500px) {
-  .team img {
-    width: 50%;
+  .team div img {
+    width: 60%;
   }
 }
-.team i {
-  font-size: 2.8rem;
+.team div i {
+  width: 2vw;
+  display: flex;
+  font-size: 6.8rem;
   cursor: pointer;
   margin-bottom: 2%;
   margin-left: 1%;
+  flex-direction: column;
 }
-.team i:hover {
-  color: #ff5a5f;
+.team div i:hover {
+  color: #00a699;
+}
+@media (max-width: 500px) {
+  .team div i {
+    font-size: 5.5rem;
+  }
+}
+.team div .PM {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team div .teamBox {
+  width: 60vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
