@@ -134,14 +134,16 @@ html {
 }
 html,
 body {
-  font-family: 'Cinzel', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 h1 {
   font-size: 4rem;
@@ -227,30 +229,37 @@ img {
 .heading .topNav .active {
   color: #ff5a5f;
 }
-.heading .topNav button {
-  display: block;
+.heading .topNav .register,
+.heading .topNav .login {
+  display: inline-block;
   background-color: #ff5a5f;
   margin: 0 1px 20px;
   cursor: pointer;
-  width: 15%;
-  height: 45px;
+  width: 10%;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: #fff;
 }
-.heading .topNav button:hover {
-  display: block;
+.heading .topNav .register:hover,
+.heading .topNav .login:hover {
+  display: inline-block;
   background-color: #00a699;
   margin: 0 1px 20px;
   cursor: pointer;
-  width: 15%;
-  height: 45px;
+  width: 10%;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: #000;
 }
 @media (max-width: 500px) {
-  .heading .topNav button {
+  .heading .topNav .register,
+  .heading .topNav .login {
     width: 30%;
   }
 }
@@ -325,30 +334,37 @@ img {
 .headingAbout .topNavAbout .active {
   color: #ff5a5f;
 }
-.headingAbout .topNavAbout button {
-  display: block;
+.headingAbout .topNavAbout .register,
+.headingAbout .topNavAbout .login {
+  display: inline-block;
   background-color: #ff5a5f;
   margin: 0 1px 20px;
   cursor: pointer;
   width: 15%;
-  height: 45px;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: #fff;
 }
-.headingAbout .topNavAbout button:hover {
-  display: block;
+.headingAbout .topNavAbout .register:hover,
+.headingAbout .topNavAbout .login:hover {
+  display: inline-block;
   background-color: #00a699;
   margin: 0 1px 20px;
   cursor: pointer;
   width: 15%;
-  height: 45px;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: #000;
 }
 @media (max-width: 500px) {
-  .headingAbout .topNavAbout button {
+  .headingAbout .topNavAbout .register,
+  .headingAbout .topNavAbout .login {
     width: 50%;
   }
 }
@@ -421,28 +437,34 @@ footer p {
     font-size: 1.4rem;
   }
 }
-.bgImg button {
+.bgImg a {
   z-index: 100;
-  display: block;
+  display: inline-block;
   background-color: #ff5a5f;
   margin: 0 1px 20px;
   cursor: pointer;
   width: 40%;
-  height: 45px;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: #fff;
+  text-decoration: none;
 }
-.bgImg button:hover {
-  display: block;
+.bgImg a:hover {
+  display: inline-block;
   background-color: #00a699;
   margin: 0 1px 20px;
   cursor: pointer;
   width: 40%;
-  height: 45px;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
   border-radius: 10px;
   color: #000;
+  text-align: center;
+  text-decoration: none;
 }
 .searchBar {
   width: 80vw;
@@ -492,13 +514,15 @@ footer p {
   width: 100%;
 }
 .searchBar button {
-  display: block;
+  display: inline-block;
   background-color: #ff5a5f;
   margin: 0 1px 20px;
   cursor: pointer;
   width: 15%;
-  height: 45px;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: #fff;
   margin: 1.5% 2% 0;
@@ -510,13 +534,15 @@ footer p {
   }
 }
 .searchBar button:hover {
-  display: block;
+  display: inline-block;
   background-color: #00a699;
   margin: 0 1px 20px;
   cursor: pointer;
   width: 15%;
-  height: 45px;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: #000;
   margin: 1.5% 2% 0;
@@ -697,6 +723,7 @@ footer p {
 @media (max-width: 500px) {
   .testimonial .three img {
     width: 30%;
+    margin-right: 5%;
   }
 }
 .testimonial .three h2 {
@@ -709,7 +736,7 @@ footer p {
   .testimonial .three h2 {
     font-size: 2.8rem;
     margin-top: -15%;
-    margin-left: 32%;
+    margin-left: 31%;
   }
 }
 .testimonial .three p {
@@ -722,7 +749,7 @@ footer p {
     width: 90%;
     font-size: 1.6rem;
     width: 75%;
-    margin-left: 32%;
+    margin-left: 31%;
   }
 }
 .testimonial img {
@@ -743,7 +770,7 @@ footer p {
   color: #ff5a5f;
 }
 .team {
-  width: 90vw;
+  width: 80vw;
   display: flex;
   flex-wrap: wrap;
   margin: 0 5% 5%;
@@ -759,15 +786,23 @@ footer p {
   }
 }
 .team div {
-  width: 43vw;
+  width: 31vw;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid #000;
-  margin: 2% auto;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  transition: 200ms ease-out;
+  background-color: #767676;
+  border: 2px solid #000;
+  margin: 2% 5%;
+}
+.team div:hover {
+  box-shadow: 10px 10px 5px #00a699;
 }
 @media (max-width: 500px) {
   .team div {
-    width: 50vw;
+    width: 75vw;
     display: flex;
   }
 }

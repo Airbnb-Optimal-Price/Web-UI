@@ -1,12 +1,14 @@
 // Mixins in here
 .customBtn(@bgColor, @width, @color) {
-  display: block;
+  display: inline-block;
   background-color: @bgColor;
   margin: 0 1px 20px;
   cursor: pointer;
   width: @width;
-  height: 45px;
+  height: 40px;
+  line-height: 2;
   font-size: 2rem;
+  text-align: center;
   border-radius: 10px;
   color: @color;
 }

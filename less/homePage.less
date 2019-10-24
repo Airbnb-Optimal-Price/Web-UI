@@ -33,11 +33,14 @@
       font-size: 1.4rem;
     }
   }
-  button {
+  a {
     z-index: 100;
     .customBtn(#ff5a5f, 40%, #fff);
+    text-decoration: none;
     &:hover {
       .customBtn(#00a699, 40%, #000);
+      text-align: center;
+      text-decoration: none;
     }
   }
 }
@@ -245,6 +248,7 @@
       border-radius: 50%;
       @media @mobile {
         width: 30%;
+        margin-right: 5%;
       }
     }
     h2 {
@@ -255,7 +259,7 @@
       @media @mobile {
         font-size: 2.8rem;
         margin-top: -15%;
-        margin-left: 32%;
+        margin-left: 31%;
       }
     }
     p {
@@ -266,7 +270,7 @@
         width: 90%;
         font-size: 1.6rem;
         width: 75%;
-        margin-left: 32%;
+        margin-left: 31%;
       }
     }
   }
@@ -291,7 +295,7 @@
   }
 }
 .team {
-  width: 90vw;
+  width: 80vw;
   display: flex;
   flex-wrap: wrap;
   margin: 0 5% 5%;
@@ -304,13 +308,21 @@
     align-items: center;
   }
   div {
-    width: 43vw;
+    width: 31vw;
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid #000;
-    margin: 2% auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    transition: 200ms ease-out;
+    background-color: #767676;
+    border: 2px solid #000;
+    margin: 2% 5%;
+    &:hover {
+      box-shadow: 10px 10px 5px rgba(0, 166, 153, 1);
+    }
     @media @mobile {
-      width: 50vw;
+      width: 75vw;
       display: flex;
     }
     img {
