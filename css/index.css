@@ -587,6 +587,10 @@ footer p {
   border-bottom: 2px solid #000;
   flex-wrap: wrap;
 }
+.testimonial h2 {
+  margin: 2% auto;
+  font-size: 4.2rem;
+}
 @media (max-width: 500px) {
   .testimonial {
     width: 90vw;
@@ -770,6 +774,7 @@ footer p {
 .team div img {
   width: 40%;
   margin: 2% 1% 2%;
+  border-radius: 50%;
 }
 @media (max-width: 500px) {
   .team div img {
