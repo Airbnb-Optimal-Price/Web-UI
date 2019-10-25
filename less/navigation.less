@@ -52,11 +52,16 @@
     .register,
     .login {
       .customBtn(#ff5a5f, 10%, #fff);
+      @media @mobile {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+      }
       &:hover {
         .customBtn(#00a699, 10%, #000);
-      }
-      @media @mobile {
-        width: 30%;
+        @media @mobile {
+          width: 60%;
+        }
       }
     }
     .register {
@@ -124,12 +129,17 @@
     }
     .register,
     .login {
-      .customBtn(#ff5a5f, 15%, #fff);
-      &:hover {
-        .customBtn(#00a699, 15%, #000);
-      }
+      .customBtn(#ff5a5f, 10%, #fff);
       @media @mobile {
-        width: 50%;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+      }
+      &:hover {
+        .customBtn(#00a699, 10%, #000);
+        @media @mobile {
+          width: 60%;
+        }
       }
     }
     .register {

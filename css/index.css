@@ -243,6 +243,14 @@ img {
   border-radius: 10px;
   color: #fff;
 }
+@media (max-width: 500px) {
+  .heading .topNav .register,
+  .heading .topNav .login {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .heading .topNav .register:hover,
 .heading .topNav .login:hover {
   display: inline-block;
@@ -258,9 +266,9 @@ img {
   color: #000;
 }
 @media (max-width: 500px) {
-  .heading .topNav .register,
-  .heading .topNav .login {
-    width: 30%;
+  .heading .topNav .register:hover,
+  .heading .topNav .login:hover {
+    width: 60%;
   }
 }
 .heading .topNav .register {
@@ -340,7 +348,7 @@ img {
   background-color: #ff5a5f;
   margin: 0 1px 20px;
   cursor: pointer;
-  width: 15%;
+  width: 10%;
   height: 40px;
   line-height: 2;
   font-size: 2rem;
@@ -348,13 +356,21 @@ img {
   border-radius: 10px;
   color: #fff;
 }
+@media (max-width: 500px) {
+  .headingAbout .topNavAbout .register,
+  .headingAbout .topNavAbout .login {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .headingAbout .topNavAbout .register:hover,
 .headingAbout .topNavAbout .login:hover {
   display: inline-block;
   background-color: #00a699;
   margin: 0 1px 20px;
   cursor: pointer;
-  width: 15%;
+  width: 10%;
   height: 40px;
   line-height: 2;
   font-size: 2rem;
@@ -363,9 +379,9 @@ img {
   color: #000;
 }
 @media (max-width: 500px) {
-  .headingAbout .topNavAbout .register,
-  .headingAbout .topNavAbout .login {
-    width: 50%;
+  .headingAbout .topNavAbout .register:hover,
+  .headingAbout .topNavAbout .login:hover {
+    width: 60%;
   }
 }
 .headingAbout .topNavAbout .register {
@@ -716,6 +732,11 @@ footer p {
   margin: 1% 5% 1%;
   padding: 5% 0 5%;
 }
+@media (max-width: 500px) {
+  .testimonial .three {
+    width: 98%;
+  }
+}
 .testimonial .three img {
   width: 20%;
   border-radius: 50%;
@@ -802,8 +823,15 @@ footer p {
 }
 @media (max-width: 500px) {
   .team div {
-    width: 75vw;
+    width: 80vw;
     display: flex;
+    line-height: 1.5;
+  }
+  .team div h1 {
+    font-size: 2.5rem;
+  }
+  .team div h2 {
+    font-size: 1.8rem;
   }
 }
 .team div img {
@@ -830,7 +858,9 @@ footer p {
 }
 @media (max-width: 500px) {
   .team div i {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 .team div .PM {
